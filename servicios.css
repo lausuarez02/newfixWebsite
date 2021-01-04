@@ -1,0 +1,560 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+  background-image: url("fotos/patrick-tomasso-fMntI8HAAB8-unsplash.jpg");
+    align-items: center;
+    text-align: center;
+    background-image: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    height:150vh;
+    
+   
+   
+    height:100vh;
+}
+
+nav {
+    height: 10vh;
+    
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #659cef;
+    
+
+  }
+  .nav-links li a{
+    padding-left:50px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+
+.nav-links li a:hover{
+  background-color: rgb(56, 25, 192);
+  text-decoration: underline;
+  
+}
+.hover{
+  background-color: rgb(56, 25, 192);
+}
+.nav-links li:hover{
+  text-decoration: underline;
+  background-color: rgb(105, 99, 99);
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.landing h1 {
+    margin: 100px;
+    font-size: 50px;
+    color: #659cef;
+  }
+  .container h1{
+    font-family: 'Lobster', cursive;
+    font-size: 120px;
+    margin-top: 5%;
+    
+    color: #659cef;
+    transform: translateY(-200px);
+    animation: 2.5s slideIn ease-in-out forwards 1s;
+
+  }
+
+  .newfix0{
+    font-size: 60px; color: #659cef; font-family: 'Lobster', cursive;
+  }
+  @media screen and (max-width: 768px) {
+    div.main h2{
+      margin-left:0px;
+      overflow-x: hidden;
+      font-size: 40px;
+    }
+    body{
+      overflow-x: hidden;
+    }
+    h1.newfix{
+        font-size: 70px;
+        margin-top:30%;
+    }
+    h2.newfix0{
+      font-size: 40px;
+      margin-top:10%;
+
+    }
+    
+    .line {
+      width: 30px;
+      height: 3px;
+      background: white;
+      margin: 5px;
+    }
+    
+    nav {
+      position: relative;
+    }
+  
+    div.hamburger {
+      position: absolute;
+      cursor: pointer;
+      right: 5%;
+      top:-270px;
+      z-index: 2;
+      background-color:  #659cef;
+    }
+  
+    .nav-links {
+      position: fixed;
+      background: #659cef;
+      height: 70vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(100px at 90% -10%);
+      -webkit-clip-path: circle(10px at 90% -10%);
+      transition: all 1s ease-out;
+      pointer-events: none;
+      top:0px;
+      margin-left:0%;
+      padding: 20px;
+     
+      
+    }
+     a{
+        background-color: transparent;
+        justify-content: space-between;
+    
+    }
+    .nav-links.open {
+      clip-path: circle(1000px at 90% -10%);
+      -webkit-clip-path: circle(1000px at 90% -10%);
+      pointer-events: all;
+    }
+    .landing {
+      flex-direction: column;
+    }
+    .nav-links li {
+      opacity: 0;
+    }
+    .nav-links li a {
+      font-size: 25px;
+      
+    }
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.6s;
+    }
+    li.fade {
+      opacity: 1;
+    }
+  }
+  @keyframes slideIn {
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+ .container00 img{
+     margin-left: -80%;
+ }
+  .telegram {
+      background-color: #659cef;
+      padding: 20px;
+      color:white;
+      text-decoration: none;
+  }
+  .telegram:hover{
+      background-color: rgb(146, 19, 19);
+  }
+  .main{
+      text-align: center;
+      background-color: #659cef;
+      height:70vh;
+  }
+  .main h2{
+  font-size: 40px;
+
+  }
+  .main img{
+      width:400px;
+      margin-left:40%;
+      padding-left:30px;
+  }
+  .texto{
+   margin-top: -300px;
+   margin-left: 5%;
+   padding:16px;
+   text-align: left;
+   color:white;
+   opacity:1;
+   
+   transition: 
+              opacity .3s .25s ease-out;
+               
+   will-change:  opacity;
+           }
+ .texto.is-visible{
+     opacity:0;
+     
+ }
+  .texto p{
+      font-size:19px;
+  }
+   .main a.boton{
+     
+      padding-left:24px;
+      padding-right:24px;
+      padding-top:10px;
+      padding-bottom:10px;
+      background-color:  #659cef;
+      border: 3px solid white;
+      color:white;
+      text-decoration: none;
+  }
+  .main a.boton:hover{
+      background-color:rgb(56, 25, 192) ;
+  }
+
+  .cuerpo000{
+    text-align: center;
+    background-image: url("fotos/jj-ying-8bghKxNU1j0-unsplash.jpg");
+    height:30vh;
+    overflow-y: hidden;
+  }
+  .cuerpo000 h2{
+    
+    color:white;
+    font-size:50px;
+    margin-top:3%;
+    
+
+  }
+  .cobertura iframe{
+      width:100%;
+      height:50vh;
+  }
+  .footer{
+    height:30vh;
+    background-color: #659cef;
+  }
+  div.footer{
+    width:100%;
+    background-color: #659cef;
+    text-align: center;
+    
+    height:50vh;
+  }
+  
+  h6.llama{
+    color:white;
+    font-size: 50px;
+    margin-left:30%;
+    margin-top:3%;
+  }
+ 
+
+
+  
+  
+  .newfix00{
+    margin-left:-60%;
+  }
+  .redess img{
+    width: 20px;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+   
+  
+  }
+  .redess{
+    margin-top: -140px;
+    margin-left: -10%;
+    justify-content: space-between;
+    opacity:1;
+     
+    transition:  transform 5s .25s cubic-bezier(0,3,.5,1), 
+               opacity .3s .25s ease-out;
+                
+    will-change:  opacity;
+            }
+  .redess.is-visible{
+      opacity:0;
+      
+  }
+  .redess a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    padding:10px;
+  }
+  .redess a:hover{
+    text-decoration: underline;
+  }
+  .footer2{
+    background-color: black;
+    opacity:0.8;
+    padding-top: 8px;;
+    margin-top: 0px;
+    height:8vh;
+    justify-content: space-between;
+    
+    
+   
+                }
+.titulos{
+                  font-size:30px;
+                  opacity:1;
+       
+                  transition:  transform 5s .25s cubic-bezier(0,3,.5,1), 
+                             opacity .3s .25s ease-out;
+                              
+                  will-change:  opacity;
+                }
+      .titulos.is-visible{
+          opacity:0;
+          
+      }
+    .creador{
+      display:flex;  
+      list-style: none;
+     
+    
+      
+    }
+    
+    .footer2 .creador{
+      margin-left: 10%;
+      margin-top: 8px;
+      
+      
+    }
+    
+    .footer2 a{
+      color:white;
+      text-decoration: none;
+      padding-right:80px;
+      
+      
+    
+    
+    }
+    .footer2 .last{
+      padding-left: 20px;
+      padding:0px;
+    }
+
+
+    @media screen and (max-width: 768px) {
+
+      .imagen1{
+        margin-left:-10%;
+      }
+
+
+      div.slider{
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-left:0%;
+        margin-top: 0px;
+      }
+      div.cuerpo{
+        background-color:  #659cef;
+        height:140vh;
+      }
+      .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+      }
+      
+      .slides input{
+        display: none;
+      }
+      
+      .slide{
+        width: 20%;
+        transition: 2s;
+      }
+      
+      .slide img{
+        width: 800px;
+        height: 500px;
+      }
+      .main img{
+        width:200px;
+        margin-left: 20%;
+        margin-top: 80%;
+      }
+      .main{
+        height:60vh;
+      }
+      .listass{
+         margin-top:-500px;
+         margin-left: 5%;
+         list-style: none;
+        
+      }
+      div.footer{
+      
+          height:60vh;
+          background-color: #659cef;
+        
+      
+      
+
+      }
+      img.newfix00{
+margin-top: 300px;
+margin-left: 17%;
+      }
+.redess{
+  margin-top: -140px;
+  margin-left: -150px;
+}
+.numeros0{
+  margin-top: -300px;
+}
+      .footer2{
+  margin-left: -5%;
+}
+    }
+    .numeros img{
+        width:20px;
+      }
+      .numeros {
+        margin-left:40%;
+        font-size:20px;
+        text-decoration: none;
+        
+        justify-content: space-between;
+        margin-top:-80px;
+        list-style: none;
+      
+        opacity:1;
+         
+        transition: 
+                   opacity .3s .25s ease-out;
+                    
+        will-change:  opacity;
+                }
+      .numeros.is-visible{
+          opacity:0;
+          
+      }
+      .numeros a{
+        color:white;
+       
+        text-decoration: none;
+      }
+      .numeros a:hover{
+        text-decoration: underline;
+      }
+
+
+      @media screen and (max-width: 768px) {
+        .texto{
+          margin-top: -700px;
+        }
+       
+        .imagen1{
+          margin-left:-10%;
+        }
+  
+  
+        div.slider{
+          width: 100%;
+          height: 300px;
+          border-radius: 10px;
+          overflow: hidden;
+          margin-left:0%;
+          margin-top: 0px;
+        }
+        div.cuerpo{
+          background-color:  #659cef;
+          height:140vh;
+        }
+        .slides{
+          width: 500%;
+          height: 500px;
+          display: flex;
+        }
+        
+        .slides input{
+          display: none;
+        }
+        
+        .slide{
+          width: 20%;
+          transition: 2s;
+        }
+        
+        .slide img{
+          width: 800px;
+          height: 500px;
+        }
+        .main img{
+          width:300px;
+          margin-left: -20%;
+          margin-top: 130%;
+        }
+        .main{
+          height:110vh;
+        }
+        .listass{
+           margin-top:-500px;
+           margin-left: 5%;
+           list-style: none;
+          
+        }
+        div.footer{
+        
+            height:90vh;
+            background-color: #659cef;
+          
+        
+        
+  
+        }
+        img.newfix00{
+  margin-top: 300px;
+  margin-left: 17%;
+        }
+  .redess{
+    margin-top: -140px;
+    margin-left: -150px;
+  }
+  .numeros0{
+    margin-top: -300px;
+  }
+        .footer2{
+    margin-left: -5%;
+  }
+      }
+   
+    
+
